@@ -1,7 +1,4 @@
 .DS_Store
-api_keys.py
-config.py
 **/__pycache__
 **/.ipynb_checkpoints
-Data/StateNames.csv
-config.py
+
