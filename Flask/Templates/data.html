@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Bring in our bootstrap stylesheet -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  
+  <!-- Bring in fontawesome toolkit-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+</link>
+  <!--Adding the link to the style change-->
+  <link href ="static/css/style.css" rel="stylesheet">
+</head>
+
+  <!--Introduce navbar-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!--Add Navbar header with white colored Latitude-->
+        <a class="navbar-brand logo" href="index.html" style="color: lightgray"> <i class='xxx'></i> </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">    
+                </li>
+                <li class="nav-item">
+                     <!--Add comparison link-->
+                    <a class="nav-link" href="chart.html">Plots</a>
+                </li>
+                <li class="nav-item">
+                  <!--Add data link-->
+                 <a class="nav-link" href="profile.html">About Us</a>
+             </li>
+                <li class="nav-item">
+                     <!--Add data link-->
+                    <a class="nav-link" href="data.html">Data</a>
+                </li>
+            </ul>
+        </div>
+  </nav>
+  <br>
+  <!--Create overall grid-->
+  <div class="container">
+        <div class="box">
+            <!--Add title-->
+            <br>
+            <h1>Snapshot of Data</h1>
+
+            <hr>
+            <p style ='text-align: left;'>Test Data</p>
+    <!--Add table-->
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr style="text-align: right;">
+            <th></th>
+            <th>uniqueID</th>
+            <th>drugName</th>
+            <th>condition</th>
+            <th>review</th>
+            <th>rating</th>
+            <th>date</th>
+            <th>usefulCount</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>0</th>
+            <td>85787</td>
+            <td>Ethinyl estradiol / norgestimate</td>
+            <td>Birth Control</td>
+            <td>i didnt last a full week with this prescription despite the fact that i was given three months worth within just a period of a couple days i was nauseous dizzy it gave me diarrhea and it made me irritable and tired i was so sick to my stomach that even though food smelled good it instantly made me sick to my stomach too high dosage for me</td>
+            <td>0</td>
+            <td>24-Sep-13</td>
+            <td>24</td>
+          </tr>
+          <tr>
+            <th>1</th>
+            <td>110619</td>
+            <td>Nexplanon</td>
+            <td>Birth Control</td>
+            <td>im  years old and have never been on birth control before have never given birth and have never been on medication for a long period of time ive had mine since march and has been very effective birth control hands down but as soon as my new health insurance kicks in im getting this thing removed i have had  sex drive since i got this thing put in my boyfriend and i used to have sex about  times a week and now its down to maybe once a month if i dont have a yeast infection i have had  infections since march ive become abnormally hormonal i havent gotten my period either i dont recommend based solely on the side effects</td>
+            <td>0</td>
+            <td>14-Dec-15</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <th>2</th>
+            <td>54230</td>
+            <td>Naloxegol</td>
+            <td>Constipation, Drug Induced</td>
+            <td>omg this was by far the wrost medication ever sick is an understatement throwing up out of both ends cold sweats like going though withdrawal be careful if you try this your going to be sick</td>
+            <td>0</td>
+            <td>7-Sep-16</td>
+            <td>20</td>
+          </tr>
+          <tr>
+            <th>3</th>
+            <td>164256</td>
+            <td>Xiidra</td>
+            <td>Dry Eye Disease</td>
+            <td>my experience was so bad that even though i only used the drops for four or five days i thought maybe i was  just too sensitive but its been over three months since i used them and my lids feel like they stick together i am unable to tolerate any light shining in the right one and must keep it patched all day everyday i have never experienced such horrible pain have lost my peripheral vision in the right eye cant look down or side to side id rather kill myself than go on with the pain and loss of vision this stuff has caused</td>
+            <td>0</td>
+            <td>9-Feb-17</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <th>4</th>
+            <td>15209</td>
+            <td>Ethinyl estradiol / norethindrone</td>
+            <td>Acne</td>
+            <td>doctor prescribed me this and i wish i never took it have to finish the pack so my period will get back on track but honestly this sucks made me go from mild acne to severe cystic acne on forehead and chin with reoccurring whiteheads on my nose and t zone hate it</td>
+            <td>0</td>
+            <td>11-Jun-17</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th>5</th>
+            <td>104939</td>
+            <td>Ethinyl estradiol / levonorgestrel</td>
+            <td>Birth Control</td>
+            <td>i have been taking seasonique for almost three months  i did not have a period until three weeks ago and i have been on my period for  weeks  it is very light i have read through the information and it says your period can last for over  days  i do have a call into my doctor to see how much longer i need to have my period before i need to be concerned</td>
+            <td>1</td>
+            <td>31-Aug-09</td>
+            <td>21</td>
+          </tr>
+          <tr>
+            <th>6</th>
+            <td>94811</td>
+            <td>Abilify</td>
+            <td>Depression</td>
+            <td>works great but watch for weight gain</td>
+            <td>1</td>
+            <td>23-Dec-13</td>
+            <td>81</td>
+          </tr>
+          <tr>
+            <th>7</th>
+            <td>78657</td>
+            <td>OnabotulinumtoxinA</td>
+            <td>Migraine Prevention</td>
+            <td>st botox shots  wasnt able to get another tx until  days ago the st time it was great migraines down to about mo loved it this time the day after i woke wback of neck very painful worse was pain in the back of head felt like hit wa x very bad headache too it was horrible i get pain med for other issues and it did nothing head swolien tight glasses some pain in my l shoulder down arm it asted  days in bed wheating pad th day worst pain gone but need hand under chin or on back of head to control head movement due to weak neck dont wake wneck pain but it starts after moving a bit if im on my feet dizzy weak jaws when eating or drinking head turns only  to l or r side weak upper arms never again</td>
+            <td>0</td>
+            <td>16-Sep-16</td>
+            <td>34</td>
+          </tr>
+          <tr>
+            <th>8</th>
+            <td>83407</td>
+            <td>Iloperidone</td>
+            <td>nan</td>
+            <td>i have only been on this medication for  days and i havent slept in  days going to stick with it for another  days and see what happens</td>
+            <td>0</td>
+            <td>23-Oct-10</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <th>9</th>
+            <td>157956</td>
+            <td>Accutane</td>
+            <td>Acne</td>
+            <td>accutane is a miracle worker although its such a hassle to get the medication what with the restrictions and blood tests and questions it is completely worth it i did experience some of the common side effects those being extremely dry everything and the occasional headache and depression but beyond that it is worth it to no end i also would suggest not drinking while on accutane if you plan on drinking drink in moderation the first time i drank on accutane the next day my face broke out and i got a rash on my arms</td>
+            <td>1</td>
+            <td>17-Jan-10</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <th>10</th>
+            <td>172947</td>
+            <td>Clonazepam</td>
+            <td>Anxiety</td>
+            <td>i have been on this medication for eight years except when i was pregnant i have agoraphobia and panic attacks without this medication i wouldnt be able to raise my children or enjoy my marriage because i would have daily panic attacks and would never leave the house i leave the house more but now i have different insurance and my new doctor doesnt want me to take it so i am now looking for a different doctor\r\n</td>
+            <td>1</td>
+            <td>10-Jun-13</td>
+            <td>30</td>
+          </tr>
+          <tr>
+            <th>11</th>
+            <td>169899</td>
+            <td>Rebif</td>
+            <td>Multiple Sclerosis</td>
+            <td>diagnosed in  and was placed on rebif since  never had any other meds overall rebif was good for me i had  years with a minor relapse in each year but did steroid treatment to resolve and then i had no relapses i must admit that i would skip at least  times a year and give myself a rebif holiday a week of not taking rebif i dont recommend this i would always let me doctor know despite my success i stopped in  because rebif never let me feel like myself and i was always tired and sluggish unfortunately in  i had a terrible relapse that landed me in the hospital for a few days my neuro said it was aggressive and wants me on tysabri now</td>
+            <td>1</td>
+            <td>3-Apr-13</td>
+            <td>20</td>
+          </tr>
+          <tr>
+            <th>12</th>
+            <td>59058</td>
+            <td>Divalproex sodium</td>
+            <td>Mania</td>
+            <td>i have bipolarmania for  years and have been using this drug for  year and it showed me realy positive effect i am afraid liver damage due to this drug otherwise it is a very good drug</td>
+            <td>1</td>
+            <td>22-Feb-09</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <th>13</th>
+            <td>42551</td>
+            <td>Concerta</td>
+            <td>ADHD</td>
+            <td>my  year old son and  year old daughter both have been diagnosed with adhd i nor my husband could wrap our minds around our kids taking medicine but were forced to give it a try my son started taking concerta when he was in th grade and my daughter started taking vyvanse in the rd gradethe results were amazing their handwriting went from sloppy to super neat reading skills increased grades were mostly asand many more great results the bad part about the pills are that they have so many side effects that were making them seem like totally different people they were skinny depressed had insomnia headaches twitching and angry we withdrew both from public school and started homeschool now learning at our own pace</td>
+            <td>1</td>
+            <td>27-Jan-14</td>
+            <td>69</td>
+          </tr>
+          <tr>
+            <th>14</th>
+            <td>133176</td>
+            <td>Tri-Sprintec</td>
+            <td>Birth Control</td>
+            <td>ive been on this pill for  months and havent experienced any symptoms it made my acne disappear a little i noticed i have none on my chest now i do not take the placebos so i dont have a period i didnt gain weight maybe a little nausea the past month maybe a little more sensitive in my mood</td>
+            <td>1</td>
+            <td>20-Nov-12</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <th>15</th>
+            <td>20711</td>
+            <td>Nucynta</td>
+            <td>Pain</td>
+            <td>prescribed mg every six to eight hours for lower back muscular pain  relieves symptoms and along with pt has provided relief  i only take it when the pain flares up  there was an initial instance or two of psychedelic like effects the first two or three times i took nucynta and went to bed  seem to sleep okay after taking nucynta now  provides much better relief than oxycodone did  have experienced some tiredness while taking</td>
+            <td>1</td>
+            <td>21-Aug-11</td>
+            <td>13</td>
+          </tr>
+          <tr>
+            <th>16</th>
+            <td>90263</td>
+            <td>Vicodin</td>
+            <td>Pain</td>
+            <td>i had appendicitis and the pain after i had surgery was horrible im the sort of person who hates taking medicine but i gave in and took some it worked very well im not sure if it was because i couldnt sleep because of the pain or that the vicodin made me drowsy but i fell asleep around  minutes after i took it every time a few months later when i had my wisdom teeth out i also took vicodin and it let me get sleep then too no other side effects</td>
+            <td>1</td>
+            <td>16-Feb-11</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <th>17</th>
+            <td>179569</td>
+            <td>Adapalene / benzoyl peroxide</td>
+            <td>Acne</td>
+            <td>im  years old and never had acne until about  years ago after i had my first child my dermatologist prescribed epiduo after i tried every possible over the counter acne treatments at home it takes about  weeks to start seeing results at first i still broke out then my skin turned red and started to peel i started using moisturizer which burned and didnt even help but i stuck with it at about the th week those side effects subsided and i no longer have breakouts my skin is no longer peeling and red and is silky soft with acne scars diminishing daily the best stuff ever</td>
+            <td>1</td>
+            <td>26-Apr-17</td>
+            <td>14</td>
+          </tr>
+          <tr>
+            <th>18</th>
+            <td>32569</td>
+            <td>Lisinopril</td>
+            <td>High Blood Pressure</td>
+            <td>have been taking zestril for many years starting with  mg and last year the doctor increased to  mg have had no noticeable side effects and it controlled my pressure for many years prior to last year  i am  years old now so i suppose it is normal to need an increased dosage  the doctor also added cardizen cd last year as i had an episode of rapid heartbeat over bpm while in his office and he sent me to the er  since taking cardizem cd for more than a year i have had no repeat episodes  no noticeable side effects either</td>
+            <td>1</td>
+            <td>3-May-09</td>
+            <td>63</td>
+          </tr>
+          <tr>
+            <th>19</th>
+            <td>139399</td>
+            <td>Armodafinil</td>
+            <td>Depression</td>
+            <td>provigil then nuvigil slightly less expensive helped save my life  took provigil first switched to nuvigil same effect for  years now  day one value no side effects as far as i know  still same dose mg nuvigil equivalent of mg provigil never increased or decreased  effect same today as day one  note  ive been on a cocktail  mg lexapro and mg klonopin daily plus daily mindfulness meditation and weekly cbt but  years of lovely life after  terrible episodes of major depression in under  years  certainly have ups and downs but not severe and brief  if i run out for a few days im grumpier less resilient but nuvigil greatly clarifies my thinking and energizes me  its not for all but miracle for me</td>
+            <td>1</td>
+            <td>9-Apr-13</td>
+            <td>65</td>
+          </tr>
+          <tr>
+            <th>20</th>
+            <td>190719</td>
+            <td>Oxybutynin</td>
+            <td>Women (oxybutynin)</td>
+            <td>patches stay on when i swim i love not having to wear depend silhouette even at night</td>
+            <td>1</td>
+            <td>16-Oct-13</td>
+            <td>9</td>
+          </tr>
+          <tr>
+            <th>21</th>
+            <td>3913</td>
+            <td>Lactobacillus acidophilus</td>
+            <td>Vaginal Yeast Infection</td>
+            <td>i was having stomach pain and i had a bad vaginal yeast infection took too acidophilus probotics and had immediate reaction i feel sooooo much better i bought the advanced acidiphilus by solgar and it really worked prior to taking the probotic i was feeling weak and very irritated but now i feel fine \r\r\n\r\r\n\r\r\nthank god i found something that really works</td>
+            <td>1</td>
+            <td>1-Nov-16</td>
+            <td>17</td>
+          </tr>
+          <tr>
+            <th>22</th>
+            <td>159485</td>
+            <td>Nefazodone</td>
+            <td>Depression</td>
+            <td>after taking this for  months i decided to stop taking it due to unusual violent behavior it helped with my depression but was not worth the violent behavior i was exhibiting i will be going back on cymbalta</td>
+            <td>0</td>
+            <td>28-May-11</td>
+            <td>7</td>
+          </tr>
+          <tr>
+            <th>23</th>
+            <td>164137</td>
+            <td>Fluorouracil</td>
+            <td>Keratosis</td>
+            <td>was using efudex which had harsh side effects redness sewlling doc then switched me to carac  in same chemical class as efudex but milder yet very effective for me</td>
+            <td>1</td>
+            <td>26-Dec-11</td>
+            <td>67</td>
+          </tr>
+          <tr>
+            <th>24</th>
+            <td>13020</td>
+            <td>Vardenafil</td>
+            <td>Erectile Dysfunction</td>
+            <td>i am a  year old male with mild erectile dysfunction was prescribed mg but decided to start slow with mg made a huge difference and feel like a new person mild congestion but well worth it</td>
+            <td>1</td>
+            <td>9-Sep-11</td>
+            <td>16</td>
+          </tr>
+        </tbody>
+      </table>
+        <table class="table table-bordered table-striped">
+            <p style ='text-align: left;'>Train Data</p>
+    <thead></thead>    
+  <!--Add table-->
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr style="text-align: right;">
+        <th></th>
+        <th>uniqueID</th>
+        <th>drugName</th>
+        <th>condition</th>
+        <th>review</th>
+        <th>rating</th>
+        <th>date</th>
+        <th>usefulCount</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>0</th>
+        <td>65463</td>
+        <td>Yasmin</td>
+        <td>Birth Control</td>
+        <td>this was my first pill i have ever tried and it was by far the worst one depression is a silent killer no sex drive tired weight gain it was not healthy for me when i quit it i felt much better and became myself again not worth it</td>
+        <td>0</td>
+        <td>24-Dec-16</td>
+        <td>9</td>
+      </tr>
+      <tr>
+        <th>1</th>
+        <td>215651</td>
+        <td>Copper</td>
+        <td>Birth Control</td>
+        <td>hi there\r\n\r\ni also wanted to write a positive review the first few days of having the copper iud was difficult ibprofin became my best friend i was bloated and swollen in my abdomen area for the first week but after that everything was fine i did experience my first period recently and honestly it wasnt that bad my period before the iud lasted about  days with medium flow once i got the iud and on my next period it was light the first two days with cramping  days before and about  days during my period on the rd and th day of my period it was pretty heavy heavy but after that went back to a normal flow definitely advise to have super size tampons if your getting the copper iud honestly im fine with my period and was expecting it to be heavier nice thing the heavy flow didnt last that long in total my period was about  days i think ill get use to it im really happy with it and havent experienced any other side effects since my period ended no spotting nothing</td>
+        <td>1</td>
+        <td>22-Apr-17</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <th>2</th>
+        <td>97512</td>
+        <td>Voltaren Gel</td>
+        <td>Osteoarthritis</td>
+        <td>im basically a very hard sell when it comes to taking any medicines but pain is a great motivator oral nsaids have given me some minor distress in the past a friend turned me on to voltaren gel  i used it on my knees neck and lower back this is as close to a miracle as i have experienced in my   years of arthritis producing activities\r\n\r\nthe best part is that dosing is applied directly and only to the problem areas so consequently much less ends up in your system overall than if taken orally\r\n\r\nwin win</td>
+        <td>1</td>
+        <td>18-Apr-12</td>
+        <td>125</td>
+      </tr>
+      <tr>
+        <th>3</th>
+        <td>158676</td>
+        <td>Methylphenidate</td>
+        <td>ADHD</td>
+        <td>my son is   weve always noticed his short attention span impulsiveness always in trouble last year he started preschool he to has a july birthday his teacher asked if i had considered holding him back we decided not to kindergarten has been a roller coaster we started seeing his pediatrician about a month into school he was in time out everyday distracting the class loud outbursts not able to sit still now it is march hes been taking metadate mg for about  months his report cards has improved about  although it does wear off around  or  in the afternoon we can really see a difference in school i still am interested in investigating other avenues overall my son has shown a significant improvement</td>
+        <td>1</td>
+        <td>2-Mar-11</td>
+        <td>25</td>
+      </tr>
+      <tr>
+        <th>4</th>
+        <td>110095</td>
+        <td>Nexplanon</td>
+        <td>Birth Control</td>
+        <td>ive had it about  months now and my experience has been great the injection was not pleasant not going to lie the numbing shot they gave me did nothing but it was conpletely covered by my aetna insurance so it was free i got it during my period and my period finished out then i had extremely light spotting for about a month and a half i do get headaches sometimes but theyre not unbearable go away with painkillers and i cant tell if its from hormones or something else but either way i have had no side effects otherwise and its been great one thing i noticed is if you are on the lightersmaller side you will probably have less side effects i am   and  lbs plus you forget its there</td>
+        <td>1</td>
+        <td>12-Apr-16</td>
+        <td>6</td>
+      </tr>
+      <tr>
+        <th>5</th>
+        <td>225190</td>
+        <td>Bupropion</td>
+        <td>Major Depressive Disorde</td>
+        <td>i started taking bupropion xl mg a day i took that for a month the first  weeks i felt kind of cloudylost had a little bit of anxiety and had some pretty bad ups and downs with my depression but by the end of the month i felt a lot better and didnt even feel like i was on a medication at all i just started my second month and was upped to a mg dose im on my th day and so far have had really bad anxiety attacks feeling like im losing control stuck in my own head most of the time and sleeping a lot im hoping i can stick it out like with the  and start feeling normal again i almost quit in the first  weeks of  but i stuck it out after reading positive reviews and it got better im hoping that happens with the mg</td>
+        <td>1</td>
+        <td>16-Dec-15</td>
+        <td>35</td>
+      </tr>
+      <tr>
+        <th>6</th>
+        <td>212170</td>
+        <td>Lamotrigine</td>
+        <td>Bipolar Disorde</td>
+        <td>i have been taking lamictal for about a month and i can see the difference the only thing is that i am itching all over i was wondering if that is normal with this medication i have no rashes or red bumps just i itch</td>
+        <td>1</td>
+        <td>25-Feb-13</td>
+        <td>39</td>
+      </tr>
+      <tr>
+        <th>7</th>
+        <td>140624</td>
+        <td>Escitalopram</td>
+        <td>Anxiety</td>
+        <td>i was suffering from severe depression to the brink i was suicidal finally i sought help and was perscribed lexapro i felt very nauseous soon after and within a few hours i was in the height of terrifying panic  so much so i begged to be locked up because i was so scared horrendous hallucinations and i felt like my skin was on fire i suffered vomiting and diarrhoea for  days and basically hid in my room for a number of weeks after  this was from taking one tablet and have since been diagnosed with gad which i did not have before  im currently trying reiki yoga counselling and meditation and know i need extta help but i have such a fear after that reaction i dont think i could survive another episode  never again</td>
+        <td>0</td>
+        <td>17-Dec-16</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <th>8</th>
+        <td>227546</td>
+        <td>Etonogestrel</td>
+        <td>Birth Control</td>
+        <td>i am  i have had the implanon for about  months and i now find it disruptive to my sex life at first everything was great until i started trying to have sexual intercourse with my boyfriend sex is now uncomfortable because of vaginal dryness burning sex the swelling came soon after it is very embarrassing to have to explain to him even though he is very understanding im am already thinking about switching over to the depo</td>
+        <td>0</td>
+        <td>10-Oct-12</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <th>9</th>
+        <td>2310</td>
+        <td>Metformin</td>
+        <td>Polycystic Ovary Syndrome</td>
+        <td>i have only been on metformin  days and i already see the difference in my symptoms i have more energy and already lost lbs before it took me a year to lose lbs i have mild gastrointestinal discomfort but well worth it it seems to help with food cravings i used to drink  cups of coffee in the morning and i am down to only one without any caffeine withdrawal symptoms i also dont crave sugar or high carb foods i have a healthy snack in between meals to prevent blood sugar drops such as an apple berries or carrots i would recommend this to anyone suffering from pcos</td>
+        <td>1</td>
+        <td>17-Nov-11</td>
+        <td>72</td>
+      </tr>
+      <tr>
+        <th>10</th>
+        <td>8604</td>
+        <td>Zolpidem</td>
+        <td>Insomnia</td>
+        <td>this medicine combined with mg of remeron the sedating antidepressant has improved my quality of life tenfold ambien zolpidem works very quickly and puts me to sleep within  minutes remeron works more slowly and keeps me in a deep restful sleep ive tried both medicines in isolation with limited success taking only zolpidem gives me a short sleep of  about  hours  on its own remeron will put me to sleep for  hours but takes two hours to start working the combination of the two is perfectly synergistic  its the silver bullet to my insomnia and lowgrade depression which ive had all of my  years ive never been happier or healthier</td>
+        <td>1</td>
+        <td>14-Aug-10</td>
+        <td>19</td>
+      </tr>
+      <tr>
+        <th>11</th>
+        <td>195057</td>
+        <td>Restoril</td>
+        <td>Insomnia</td>
+        <td>i have suffered from complex insomnia trouble falling asleep as well as trouble staying asleep secondary to severe major depressive disorder for many years i have lost count of the sleep meds that worked for a while until i developed a tolerance i have walked a tightrope between meds that dont help at all and those that make me sleep all day my current solution is a combination of temazepam to help me fall asleep and seroquel to help me stay asleep its the result of a lot of trial and error and it is regulating my sleep better than anything i have ever experienced now if can just avoid building up a tolerance</td>
+        <td>1</td>
+        <td>20-Dec-14</td>
+        <td>73</td>
+      </tr>
+      <tr>
+        <th>12</th>
+        <td>134923</td>
+        <td>Pazopanib</td>
+        <td>Renal Cell Carcinoma</td>
+        <td>unfortunately side effects for me have been horrific i was on mg for  weeks i wound up with nausea extreme hoarseness  high blood pressure  fatigue with sleeping  to  hours a day took a turn for the worse and liver enzymes were high could not eat or drink water for  days and lost  pounds i was off the votrient for a month and just started back on half the dose mg so far so good one evening of slight nausea other than a little more tired it appears to be better</td>
+        <td>0</td>
+        <td>7-Jan-15</td>
+        <td>67</td>
+      </tr>
+      <tr>
+        <th>13</th>
+        <td>85398</td>
+        <td>Ethinyl estradiol / norgestimate</td>
+        <td>Birth Control</td>
+        <td>honestly i absolutely love it its the only pills that have worked for me</td>
+        <td>1</td>
+        <td>13-May-15</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <th>14</th>
+        <td>192322</td>
+        <td>Drospirenone / ethinyl estradiol</td>
+        <td>Birth Control</td>
+        <td>the only reason i didnt rate this pill a  is because it did clear up my skin which is initially why i switched to ocella i was on beyaz for  months and loved it and when i learned my insurance did not cover it i quickly had to switch to a similar generic birth control which i thought ocella was always compared to beyaz so let me just say it did wonders for my skin however within a week of taking the pill i noticed a huge change in my mood i was really sad all of the time especially at work it only went down from there after  weeks on ocella i had an anxiety attack at my boyfriends house and the following week i experienced the heaviest depression i have ever felt in my life i had horrible thoughts felt hopeless and down</td>
+        <td>0</td>
+        <td>5-Jun-15</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <th>15</th>
+        <td>157767</td>
+        <td>Accutane</td>
+        <td>Acne</td>
+        <td>you wont see your face changing until about  months in it becomes very smooth and almost everyday i get complements by people about how smooth my skin in make sure you use ponds facial cleanser it moisturizes your skin while cleaning it trust me then use ponds facial lotion i use a little when out in public because i dont want my face to look greasy and a ton before i go to bed if you always apply beewax chapstick your lips will never be chapped today im finishing my rd month takes  my nose is very dry i have to pick it constantly because it hurts i havent had a bump in about  weeks nothing really raised to the surface it all just smoothed itself out after i shave i get small bumps on my chin</td>
+        <td>1</td>
+        <td>21-Sep-12</td>
+        <td>15</td>
+      </tr>
+      <tr>
+        <th>16</th>
+        <td>126457</td>
+        <td>Kineret</td>
+        <td>Schnitzler Syndrome</td>
+        <td>ive been on kineret anakinra for several years for schnitzler syndrome no other medication gave me relief except high dose steroids but i was pain and hives free within a couple of days of starting kineret and back digging in the garden and walking kilometres when i had spent the previous  years mainly in bed it was on the pbs list but now my hospital pays for it on my behalf no injection site problems or side effects</td>
+        <td>1</td>
+        <td>10-Apr-13</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <th>17</th>
+        <td>177419</td>
+        <td>Duloxetine</td>
+        <td>Depression</td>
+        <td>i was prescribed cymbalta as a preventative for intractable migraines i was also dealing with some depression due to my chronic pain \r\ni was on a dose of mg at bed and was to increase to mg after  weeks after my first dose i awoke with general nausea i had diarrhea once that st day after my nd dose the worst of it started i awoke three times that night with diarrhea  literally i didnt wake up having to run to the the bathroom i was awakened because i was in the process of soiling myself in bed i couldnt eat lost lbs in a week had diarrhea the whole time i stopped talking it and had the worst migraine of my life and electric zaps for two days after just say no to cymbalta</td>
+        <td>0</td>
+        <td>2-Jun-16</td>
+        <td>18</td>
+      </tr>
+      <tr>
+        <th>18</th>
+        <td>181499</td>
+        <td>Prozac</td>
+        <td>Depression</td>
+        <td>prozac is really a life saver</td>
+        <td>1</td>
+        <td>26-Jul-14</td>
+        <td>103</td>
+      </tr>
+      <tr>
+        <th>19</th>
+        <td>21120</td>
+        <td>Paliperidone</td>
+        <td>Schizoaffective Disorde</td>
+        <td>been on invega er for two months so much better in the head sorted the acute psychosis out organized my thoughts in a new and helpful way slight orthostatic hypotension and drowsiness is easing  overall this has been a saviour re paranoia and hallucinations etc  and i am more motivated to do things continuing with pristiq at mgs and paliperidone mg good</td>
+        <td>1</td>
+        <td>12-Dec-14</td>
+        <td>41</td>
+      </tr>
+      <tr>
+        <th>20</th>
+        <td>157049</td>
+        <td>Movantik</td>
+        <td>Constipation, Drug Induced</td>
+        <td>i take methadone for chronic disc degenerative disease and severe spinal stenosis   this medication is the most effective for drug induced constipation</td>
+        <td>1</td>
+        <td>6-Sep-15</td>
+        <td>29</td>
+      </tr>
+      <tr>
+        <th>21</th>
+        <td>135660</td>
+        <td>Tinidazole</td>
+        <td>Bacterial Vaginitis</td>
+        <td>took  pills a day for  days i am at about  hours from my last pill as i write this maybe i was extremely lucky but i didnt have any negative side affects no metallic taste no nausea no headaches etc  i also notice a positive dif down there  i took one pill at a time   with breakfast  with lunch  with afternoon snack    with dinner maybe that helps to reduce side affects rather than taking multiple at once i drank a lot of water and did not have any alcohol since starting them</td>
+        <td>1</td>
+        <td>4-May-17</td>
+        <td>12</td>
+      </tr>
+      <tr>
+        <th>22</th>
+        <td>143573</td>
+        <td>Etonogestrel</td>
+        <td>Birth Control</td>
+        <td>i have taken oral contraceptives for years with no problems but decided to try nexplanon because i was living abroad without access to a pharmacy i had almost constant bleeding but was told that sometimes that happens at the beginning and to try to tough it out and see if it would work out for me when i finally got it removed after  months i had gained  pounds despite no changes to my eating or exercising habits i really regret getting nexplanon and am back on the pill my periods are slowly returning to normal and ive lost  pounds since its removal  months ago</td>
+        <td>0</td>
+        <td>27-Dec-16</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <th>23</th>
+        <td>7176</td>
+        <td>Aluminum chloride hexahydrate</td>
+        <td>Hyperhidrosis</td>
+        <td>i had hyperhidrosis since like forever and it was really bad i remember when i was in elementary school when my friends played hand games and i couldnt because i know that my palms would sweat and theyll be disgusted by it and when i was going through puberty my under arms started to sweat and it was really embrassing i wore layers of clothes to hide the sweat but thatll just make it worse and also shaking hands was a problem but hypercare helps a lot my life became so much more happier and im glad that my doctor prescribed me hypercare and i recommend it to anyone who suffers from hyperhidrosis</td>
+        <td>1</td>
+        <td>20-Mar-12</td>
+        <td>7</td>
+      </tr>
+      <tr>
+        <th>24</th>
+        <td>155165</td>
+        <td>Metronidazole</td>
+        <td>Diverticulitis</td>
+        <td>i was given  tabs of metronidazole x  a day for  days also given another drug with it take x  a day by the  day i was so sick i wished i could die stomach cramps bloating gas quit taking these meds on the th daystomach cleared up but now i riddled with so much joint pain i can hardly move</td>
+        <td>0</td>
+        <td>27-Dec-15</td>
+        <td>16</td>
+      </tr>
+    </tbody>
+  </table>
+  
+    ​<p>Source: 
+      <a href="https:kaggle.com/">Visit Kaggle.com</a>
+    </p>     
+  </tbody>
+</div>
+</div>
+</div>
+</body>
+</html>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+</div>
+</html>

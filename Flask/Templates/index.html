@@ -24,20 +24,14 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">    
-                <li class="nav-item dropdown">
-                    <!--Create dropdown menu for Plots-->
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Maps </a>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                        <!--Add dropdown menu links-->
-                        <a class="dropdown-item" href="mainpage.html">Landing Page</a>
-                        <a class="dropdown-item" href="model.html">Model Predictions</a>
-                        <a class="dropdown-item" href="profile.html">About US</a>
-                    </div>
-                </li>
                 <li class="nav-item">
                      <!--Add comparison link-->
                     <a class="nav-link" href="chart.html">Plots</a>
                 </li>
+                <li class="nav-item">
+                  <!--Add data link-->
+                 <a class="nav-link" href="profile.html">About Us</a>
+             </li>
                 <li class="nav-item">
                      <!--Add data link-->
                     <a class="nav-link" href="data.html">Data</a>
@@ -47,11 +41,14 @@
     </div>
   </nav>
 <body>
+  <div class="container">
+  <img src="picture.jpg" id = 'main_img'  class="img-fluid">
+  </div>
   <h1> Sentiment Analysis of Drug Reviews </h1>
     <div class="container">
             <div class="row">
                 <div class="col-lg-12"> 
-                  <img src="resources/image/lyft_mars.gif" id = 'main_img'  class="img-fluid">
+                  <!-- <img src="picture.jpg" id = 'main_img'  class="img-fluid"> -->
                   <!-- // GIF used available here: https://dribbble.com/shots/3932264-Mars "Mars by James Curran" -->
                   <br>
                     <p>Welcome to our project!</p>

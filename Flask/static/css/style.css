@@ -1,0 +1,64 @@
+#map,
+body,
+html {
+height:100%;
+}
+
+/*Body*/
+body{
+  padding: 0px;
+  margin: 0px;
+  background-color: white;
+}
+
+/*Words*/
+h1{
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: lightblue;
+  font-family: f3c3;
+}
+
+p{
+  color: rgb(255, 0, 191);
+  font-weight: bold;  
+}
+
+/*Navbar*/
+.navbar-brand{
+  background-color:white;
+  text-align: center;
+}
+
+.dropdown-item {
+  color: rgb(255, 0, 191)
+}
+
+.nav-link {
+  color: rgb(255, 0, 191)
+}
+
+.navbar{
+  background-color: white !important;
+  font-family: f3c3;
+}
+
+#main_img{
+  max-width: 40%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*Container*/
+.container{
+  background-color:white;
+}
+
+/*Media query*/
+.navbar{
+  background-color: white !important;
+}
+
+
