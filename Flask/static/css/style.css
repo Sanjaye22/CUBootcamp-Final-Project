@@ -1,4 +1,4 @@
-#map,
+
 body,
 html {
 height:100%;
@@ -18,6 +18,10 @@ h1{
   font-weight: bold;
   color: lightblue;
   font-family: f3c3;
+}
+
+.title {
+  text-align: center;
 }
 
 p{

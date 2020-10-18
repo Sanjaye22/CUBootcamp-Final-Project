@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="UTF-8">
-    <title>Lyft Pick Ups</title>
+    <title>About Us</title>
     <!-- Bring in our bootstrap stylesheet -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">    
     <!-- Bring in fontawesome toolkit-->
@@ -19,26 +19,20 @@
 <!--Introduce navbar-->
  <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <!--Add Navbar header with white colored Latitude-->
-  <a class="navbar-brand logo" href="index.html" style="color: #FF00BF"> <i class='fab fa-lyft fa-2x'></i> </a>
+  <a class="navbar-brand logo" href="index.html" style="color: darkblue"> <i class="fas fa-prescription"></i> </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">    
-          <li class="nav-item dropdown">
-              <!--Create dropdown menu for Plots-->
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Maps </a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                  <!--Add dropdown menu links-->
-                  <a class="dropdown-item" href="heatmap.html">Heatmap</a>
-                  <a class="dropdown-item" href="clusters.html">Clusters</a>
-                  <a class="dropdown-item" href="markers.html">Markers</a>
-              </div>
-          </li>
           <li class="nav-item">
                <!--Add comparison link-->
               <a class="nav-link" href="chart.html">Plots</a>
           </li>
+          <li class="nav-item">
+            <!--Add data link-->
+           <a class="nav-link" href="profile.html">About Us</a>
+       </li>
           <li class="nav-item">
                <!--Add data link-->
               <a class="nav-link" href="data.html">Data</a>
@@ -49,10 +43,48 @@
 
   <body>
     <div class="container">
-      <h1>Lyft Pick Up Data From September 5, 2014 - NYC Markers</h1>
+      <h1 id="title">Meet The Collaborators</h1>
       <div class="row">
        <div class="col-md-12"> 
-    <div id="map" style="height: 750px">
+
+        <section class="services row no-gutters px-5 text-center">
+          <div class="col-md-4 py-5">
+            <h2><i class="fas fa-pencil-ruler"></i></h2>
+            <p class="service-names">Kefan Li</p>
+            <p class="service-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, nulla.</p>
+            <p class="linkedin">Linkedin: ADD</p>
+            <p class="git-pages">Githup: ADD</p>
+          </div>
+          <div class="col-md-4 py-5">
+            <h2><i class="fas fa-database"></i></h2>
+            <p class="service-names">Anjelica Ramsey</p>
+            <p class="service-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, nulla.</p>
+            <p class="linkedin">Linkedin: ADD</p>
+            <p class="git-pages">Githup: ADD</p>
+          </div>
+          <div class="col-md-4 py-5">
+            <h2><i class="fab fa-python"></i></h2>
+            <p class="service-names">Sanjaye Thomas</p>
+            <p class="service-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, nulla.</p>
+            <p class="linkedin">Linkedin: ADD</p>
+            <p class="git-pages">Githup: ADD</p>
+          </div>
+          <div class="col-md-4 py-5">
+            <h2><i class="fab fa-python"></i></h2>
+            <p class="service-names">Eline Van Eldere</p>
+            <p class="service-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, nulla.</p>
+            <p class="linkedin">Linkedin: ADD</p>
+            <p class="git-pages">Githup: ADD</p>
+          </div>
+          <div class="col-md-4 py-5">
+            <h2><i class="fab fa-python"></i></h2>
+            <p class="service-names">Kenny Wu</p>
+            <p class="service-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, nulla.</p>
+            <p class="linkedin">Linkedin: ADD</p>
+            <p class="git-pages">Githup: ADD</p>
+          </div>
+        </section>
+   
     <!-- API key -->
     <script type="text/javascript" src="static/js/config.js"></script>
     <!-- Leaflet JS -->
