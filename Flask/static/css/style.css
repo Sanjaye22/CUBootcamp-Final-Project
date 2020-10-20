@@ -1,4 +1,3 @@
-
 body,
 html {
 height:100%;
@@ -14,10 +13,17 @@ body{
 /*Words*/
 h1{
   text-align: center;
-  font-size: 28px;
+  font-size: 40px;
   font-weight: bold;
-  color: lightblue;
-  font-family: f3c3;
+  color: rgb(86, 192, 228);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Placeholder1*/
+
+.placeholder1 {
+  text-align: center;
+  font-size: 22px
 }
 
 .title {
@@ -25,33 +31,45 @@ h1{
 }
 
 p{
-  color: rgb(255, 0, 191);
+  color: rgb(86, 192, 228);
   font-weight: bold;  
 }
 
+.btn btn-primary {
+  color: rgb(86, 192, 228);
+}
+
 /*Navbar*/
-.navbar-brand{
-  background-color:white;
-  text-align: center;
-}
 
-.dropdown-item {
-  color: rgb(255, 0, 191)
-}
 
-.nav-link {
+/* .dropdown-item {
   color: rgb(255, 0, 191)
-}
+} */
+
+/* .nav-link {
+  color: rgb(255, 0, 191)
+} */
 
 .navbar{
-  background-color: white !important;
-  font-family: f3c3;
+  font-size: 20px;
+}
+
+.navbar-brand logo{
+  font-size: 100px
 }
 
 #main_img{
-  max-width: 40%;
-  height: auto;
-  display: block;
+  max-width: auto;
+  height: 350px;
+  display: block; 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#gif {
+  max-width: auto;
+  height: 200px;
+  display: block; 
   margin-left: auto;
   margin-right: auto;
 }
@@ -60,9 +78,13 @@ p{
   background-color:white;
 }
 
-/*Media query*/
-.navbar{
-  background-color: white !important;
+.table .thead-dark th {
+  background-color: rgb(86, 192, 228);
+  color: white
 }
 
+/*Media query*/
+.navbar{
+  background-color: rgb(86, 192, 228) !important;
+}
 
