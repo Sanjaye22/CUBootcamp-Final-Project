@@ -12,13 +12,13 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
 </link>
   <!--Adding the link to the style change-->
-  <link href ="static/css/style.css" rel="stylesheet">
+  <link href ="../static/css/style.css" rel="stylesheet">
 </head>
 
   <!--Introduce navbar-->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <!--Add Navbar header with white colored Latitude-->
-        <a class="navbar-brand logo" href="index.html" style="color: darkblue"> <i class="fas fa-prescription"></i> </a>
+        <a class="navbar-brand logo" href="index.html" style="color: white"> <i class="fas fa-prescription" style = "font-size: 30px"></i> </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -27,16 +27,16 @@
                 </li>
                 <li class="nav-item">
                      <!--Add comparison link-->
-                    <a class="nav-link" href="chart.html">Plots</a>
+                    <a class="nav-link" href="chart.html" style = "color:white"><i class="fas fa-tablets"> </i > Plots</a>
+                </li>
+                <li class="nav-item">
+                     <!--Add data link-->
+                    <a class="nav-link" href="data.html" style = "color:white"> <i class="fas fa-table"> </i> Data</a>
                 </li>
                 <li class="nav-item">
                   <!--Add data link-->
-                 <a class="nav-link" href="profile.html">About Us</a>
-             </li>
-                <li class="nav-item">
-                     <!--Add data link-->
-                    <a class="nav-link" href="data.html">Data</a>
-                </li>
+               <a class="nav-link" href="profile.html" style = "color:white"><i class="fas fa-user-graduate"> </i> About Us</a>
+           </li>
             </ul>
         </div>
   </nav>
@@ -47,12 +47,15 @@
             <!--Add title-->
             <br>
             <h1>Snapshot of Data</h1>
+            ​<p>The source for this data can be found here: 
+              <a href="https:kaggle.com/">Kaggle.com</a>
+            </p>     
 
             <hr>
-            <p style ='text-align: left;'>Test Data</p>
+            <p style ='text-align: center;'>Test Data</p>
     <!--Add table-->
       <table class="table table-bordered table-striped">
-        <thead>
+        <thead class="thead-dark">
           <tr style="text-align: right;">
             <th></th>
             <th>uniqueID</th>
@@ -318,11 +321,11 @@
         </tbody>
       </table>
         <table class="table table-bordered table-striped">
-            <p style ='text-align: left;'>Train Data</p>
+            <p style ='text-align: center;'>Train Data</p>
     <thead></thead>    
   <!--Add table-->
   <table class="table table-bordered table-striped">
-    <thead>
+    <thead class="thead-dark">
       <tr style="text-align: right;">
         <th></th>
         <th>uniqueID</th>
@@ -588,9 +591,6 @@
     </tbody>
   </table>
   
-    ​<p>Source: 
-      <a href="https:kaggle.com/">Visit Kaggle.com</a>
-    </p>     
   </tbody>
 </div>
 </div>
