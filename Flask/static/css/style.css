@@ -83,6 +83,12 @@ p{
   color: white
 }
 
+.viz1603242162555{
+  display: block; 
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /*Media query*/
 .navbar{
   background-color: rgb(86, 192, 228) !important;

@@ -1,0 +1,1 @@
+{"class":"org.apache.spark.ml.feature.CountVectorizerModel","timestamp":1603082757802,"sparkVersion":"3.0.1","uid":"CountVectorizer_596c5050de42","paramMap":{"inputCol":"2_grams","outputCol":"2_tf","vocabSize":16384},"defaultParamMap":{"binary":false,"minDF":1.0,"outputCol":"CountVectorizer_596c5050de42__output","minTF":1.0,"vocabSize":262144,"maxDF":9.223372036854776E18}}

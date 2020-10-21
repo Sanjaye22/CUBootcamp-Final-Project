@@ -1,0 +1,1 @@
+{"class":"org.apache.spark.ml.feature.NGram","timestamp":1603089184597,"sparkVersion":"3.0.1","uid":"NGram_99715f4f7f9a","paramMap":{"outputCol":"3_grams","inputCol":"stop_tokens","n":3},"defaultParamMap":{"outputCol":"NGram_99715f4f7f9a__output","n":2}}
