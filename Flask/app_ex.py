@@ -6,7 +6,23 @@ from flask import Flask, render_template, redirect, jsonify, request
 import pandas as pd
 import os
 
+# pyspark imports 
+from pyspark.sql import SparkSession
+from pyspark.ml import PipelineModel
 
+# Set Environment Variables
+import os
+os.environ["JAVA_HOME"] = "C:\Program Files\Java\jdk1.8.0_271"
+os.environ["HADOOP_HOME"] = "C:\Installations\Hadoop"
+os.environ["SPARK_HOME"] = "D:\spark-2.4.5-bin-hadoop2.7\spark-2.4.5-bin-hadoop2.7"
+
+# Start a SparkSession
+import findspark
+findspark.init()
+
+spark =  SparkSession.builder \
+    .master("local[*]") \
+    .getOrCreate()  
 
 app = Flask(__name__)
 
@@ -25,14 +41,19 @@ Testfinal = Base.classes.testfinal
 Trainfinal = Base.classes.trainfinal
 
 
-@app.route("/")
+@app.route("/", methods=["GET", "POST"])
 def index():
-
-    # Find one record of data from the mongo database
-    # data = mongo.db.data.find()
-
+    output= None
+    if request.method == "POST":
+        input_data = request.values.get("input")
+        loaded_model = PipelineModel.load("logistic_regression_multiclass")
+        testreview = spark.createDataFrame([(f"{str(input_data)}", 0)], ["review", "rating"])
+        transformed_model = loaded_model.transform(testreview)
+        output = str(transformed_model.select(["rawPrediction","probability", "prediction"]).show(truncate=False))
+        #
+        #output = results 
     # Return template and data
-    return render_template("index.html")
+    return render_template("index.html", output= output)
 
 
 
