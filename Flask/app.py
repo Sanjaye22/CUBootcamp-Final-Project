@@ -56,6 +56,16 @@ def datapage():
 
     return render_template("data.html")
 
+@app.route("/chart")
+def chartpage():
+
+    return render_template("chart.html")
+
+@app.route("/profile")
+def profilepage():
+
+    return render_template("profile.html")
+
 if __name__ == "__main__":
     app.run(debug=True)
 
