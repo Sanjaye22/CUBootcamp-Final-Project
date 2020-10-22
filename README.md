@@ -18,4 +18,4 @@ Try it for Yourself!
 
 ## Team Members: 
 Kefan Li, Anjelica Ramsey, Sanjaye Thomas, Eline Van Eldere, Kenny Wu 
-Sentiment Analysis of Drug Reviews Sentiment Analysis of Drug Reviews 
+
