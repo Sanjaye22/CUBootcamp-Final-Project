@@ -26,15 +26,15 @@
             <ul class="navbar-nav ml-auto">    
                 <li class="nav-item">
                      <!--Add comparison link-->
-                    <a class="nav-link" href="chart.html" style = "color:white"> <i class="fas fa-tablets"></i> Plots</a>
+                    <a class="nav-link" href="/chart" style = "color:white"> <i class="fas fa-tablets"></i> Plots</a>
                 </li>
                 <li class="nav-item">
                      <!--Add data link-->
-                    <a class="nav-link" href="data.html" style = "color:white"> <i class="fas fa-table"></i> Data</a>
+                    <a class="nav-link" href="/data" style = "color:white"> <i class="fas fa-table"></i> Data</a>
                 </li>
                 <li class="nav-item">
                   <!--Add data link-->
-               <a class="nav-link" href="profile.html" style = "color:white"> <i class="fas fa-user-graduate"></i> About Us</a>
+               <a class="nav-link" href="/profile" style = "color:white"> <i class="fas fa-user-graduate"></i> About Us</a>
            </li>
             </ul>
         </div>
@@ -43,9 +43,9 @@
 <br>
 <body>
   <div class="container">
-  <img src="banner3.jpeg" id = 'main_img'  class="img-fluid">
+  <img src="static/images/banner3.jpeg" id = 'main_img'  class="img-fluid">
    <h1 id = 'test'> Sentiment Analysis of Drug Reviews </h1>
-   <img src="gif3.gif" id = 'gif'  class="img-fluid">
+   <img src= "static/images/gif3.gif" id = 'gif'  class="img-fluid">
    <!-- This is the source of the gif: https://media.giphy.com/media/l4XyCo0bmD4yc1zrKv/giphy.gif -->
   </div>
     <div class="container">
@@ -55,16 +55,17 @@
                   <!-- // GIF used available here: https://dribbble.com/shots/3932264-Mars "Mars by James Curran" -->
                     <br>
                     <p class = 'placeholder1'>  "What is sentiment analysis" </p>
-                    <div class="form-group shadow-textarea">
-                      <label for="exampleFormControlTextarea6" style= "color:rgb(86, 192, 228)">Predict your sentiments...</label>
-                      <textarea class="form-control z-depth-1" id="input" rows="3" placeholder="Try it out yourself..."></textarea>
-                      <br>
-                      <button class="btn btn-primary" type="submit" style = "background-color:rgb(86, 192, 228)">Submit Review</button>
-                    </div>
-                    <div class="form-group shadow-textarea">
-                      <label for="exampleFormControlTextarea6" style= "color:rgb(86, 192, 228)"></label>
-                      <textarea class="form-control z-depth-1" id="output" rows="1"></textarea>
-                    </div>
+                    <form method="POST" action="/">
+                      <div class="form-group shadow-textarea">
+                        <label for="exampleFormControlTextarea6" style= "color:rgb(86, 192, 228)">Predict your sentiments...</label>
+                        <textarea class="form-control z-depth-1" id="input" name="input" rows="3" placeholder="Try it out yourself..."></textarea>
+                        <br>
+                        <button class="btn btn-primary" type="submit" value= "Submit" style = "background-color:rgb(86, 192, 228)">Submit Review</button>
+                      </div>
+                    </form>
+                    {% if output %}
+                    <h3>{{output}}</h3>
+                    {% endif %}
                     <br>
                     <br>
 
