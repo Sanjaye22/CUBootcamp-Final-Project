@@ -41,15 +41,20 @@ app = Flask(__name__)
 @app.route("/", methods=["GET", "POST"])
 def index():
     output= None
+    results= None
     if request.method == "POST":
         input_data = request.values.get("input")
         loaded_model = PipelineModel.load("models/lr_regression_eval")
         testreview = spark.createDataFrame([(f"{str(input_data)}", 0)], ["review", "rating"])
         transformed_model = loaded_model.transform(testreview)
         output = str(int(transformed_model.select("prediction").collect()[0]["prediction"]))
+        if (output == 0):
+            results = "This is a positive review"
+        else:
+            results = "This is a negative review"
 
     # Return template and data
-    return render_template("index.html", output= output)
+    return render_template("index.html", output= results)
 
 @app.route("/data")
 def datapage():

@@ -7,7 +7,7 @@ height:100%;
 body{
   padding: 0px;
   margin: 0px;
-  background-color: white;
+  background-color: #e0f7fa;
 }
 
 /*Words*/
@@ -58,6 +58,14 @@ p{
   font-size: 100px
 }
 
+#img_2{
+  max-width: auto;
+  height: 350px;
+  display: block; 
+  margin-left: auto;
+  margin-right: auto;
+}
+
 #main_img{
   max-width: auto;
   height: 350px;
@@ -67,15 +75,16 @@ p{
 }
 
 #gif {
-  max-width: auto;
-  height: 200px;
+  height: auto;
+  width: 200px;
   display: block; 
   margin-left: auto;
   margin-right: auto;
 }
+
 /*Container*/
 .container{
-  background-color:white;
+  background-color: #e0f7fa;
 }
 
 .table .thead-dark th {
@@ -92,6 +101,6 @@ p{
 
 /*Media query*/
 .navbar{
-  background-color: rgb(86, 192, 228) !important;
+  background-color: rgb(173, 195, 230) !important;
 }
 
