@@ -48,7 +48,7 @@ def index():
         testreview = spark.createDataFrame([(f"{str(input_data)}", 0)], ["review", "rating"])
         transformed_model = loaded_model.transform(testreview)
         output = str(int(transformed_model.select("prediction").collect()[0]["prediction"]))
-        if (output == 0):
+        if (output == "0"):
             results = "This is a positive review"
         else:
             results = "This is a negative review"
