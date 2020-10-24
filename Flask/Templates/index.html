@@ -2,91 +2,91 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <!-- Bring in our bootstrap stylesheet -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  
-  <!-- Bring in fontawesome toolkit-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
-</link>
-  <!--Adding the link to the style change-->
-  <link href ="../static/css/style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bring in our bootstrap stylesheet -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- Bring in fontawesome toolkit-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+    </link>
+    <!--Adding the link to the style change-->
+    <link href="../static/css/style.css" rel="stylesheet">
 </head>
 
-  <!--Introduce navbar-->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      
-        <a class="navbar-brand logo" href="index.html" style="color: white"> <i class="fas fa-prescription" style = "font-size: 30px"></i> </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<!--Introduce navbar-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+    <a class="navbar-brand logo" href="index.html" style="color: black"> <i class="fas fa-prescription" style="font-size: 30px"></i> </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">    
-                <li class="nav-item">
-                     <!--Add comparison link-->
-                    <a class="nav-link" href="/chart" style = "color:white"> <i class="fas fa-tablets"></i> Plots</a>
-                </li>
-                <li class="nav-item">
-                     <!--Add data link-->
-                    <a class="nav-link" href="/data" style = "color:white"> <i class="fas fa-table"></i> Data</a>
-                </li>
-                <li class="nav-item">
-                  <!--Add data link-->
-               <a class="nav-link" href="/profile" style = "color:white"> <i class="fas fa-user-graduate"></i> About Us</a>
-           </li>
-            </ul>
-        </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <!--Add comparison link-->
+                <a class="nav-link" href="/chart" style="color:black"> <i class="fas fa-tablets"></i> Plots</a>
+            </li>
+            <li class="nav-item">
+                <!--Add data link-->
+                <a class="nav-link" href="/data" style="color:black"> <i class="fas fa-table"></i> Data</a>
+            </li>
+            <li class="nav-item">
+                <!--Add data link-->
+                <a class="nav-link" href="/profile" style="color:black"> <i class="fas fa-user-graduate"></i> About Us</a>
+            </li>
+        </ul>
     </div>
-  </nav>
-<body>
-  <img src="static/images/pill3.png" id = 'img_2'  class="img-fluid">
+    </div>
+</nav>
 
-  <div class="container">
-   <h1 id = 'test'> Sentiment Analysis of Drug Reviews </h1>
-   <!-- This is the source of the gif: https://media.giphy.com/media/l4XyCo0bmD4yc1zrKv/giphy.gif -->
-  </div>
+<body>
+    <img src="static/images/pill3.png" id='img_2' class="img-fluid">
+
     <div class="container">
-            <div class="row">
-                <div class="col-lg-12"> 
-                  <!-- <img src="picture.jpg" id = 'main_img'  class="img-fluid"> -->
-                  <!-- // GIF used available here: https://dribbble.com/shots/3932264-Mars "Mars by James Curran" -->
-                    <br>
-                    <p class = 'placeholder1'>  "What is sentiment analysis" </p>
-                    <form method="POST" action="/">
-                      <div class="form-group shadow-textarea">
-                        <label for="exampleFormControlTextarea6" style= "color:rgb(86, 192, 228)">Predict your sentiments...</label>
+        <h1 id='test'> Sentiment Analysis of Drug Reviews </h1>
+        <!-- This is the source of the gif: https://media.giphy.com/media/l4XyCo0bmD4yc1zrKv/giphy.gif -->
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <!-- <img src="picture.jpg" id = 'main_img'  class="img-fluid"> -->
+                <!-- // GIF used available here: https://dribbble.com/shots/3932264-Mars "Mars by James Curran" -->
+                <br>
+                <p class='placeholder1'> "What is sentiment analysis" </p>
+                <form method="POST" action="/">
+                    <div class="form-group shadow-textarea">
+                        <label for="exampleFormControlTextarea6" id="prediction">Predict your sentiments...</label>
                         <textarea class="form-control z-depth-1" id="input" name="input" rows="3" placeholder="Try it out yourself..."></textarea>
                         <br>
-                        <img src= "static/images/stars.gif" id = 'gif'  class="img-fluid">
-                        <button class="btn btn-primary" type="submit" value= "Submit" style = "background-color:rgb(86, 192, 228)">Submit Review</button>
-                      </div>
-                    </form>
-                    {% if output %}
-                    <h3>{{output}}</h3>
-                    {% endif %}
-                    <br>
-                    <br>
-
-                    
-                    <p> A brief rundown of the model, what model was used to train the algorithm and why. Add two pictures with negative/positive reviews</p>
-
-                    <p> Paragraph about sentiment analysis uses for example customer feedback, market research, brand monitoring</p>
-                      
-                    <p>TBD </p>
-
-                    <p>TBD</p>
-                    
+                        <img src="static/images/stars.gif" id='gif' class="img-fluid">
+                        <button class="btn btn-primary" type="submit" value="Submit" style="background-color:#ABC6D1">Submit Review</button>
                     </div>
-                  </div>
-                </div>
-              </body>
-              
-              </html>
-              <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-              <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-              <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-            
-            </html>
-            
+                </form>
+                {% if output %}
+                <h3>{{output}}</h3>
+                {% endif %}
+                <br>
+                <br>
+
+
+                <p> A brief rundown of the model, what model was used to train the algorithm and why. Add two pictures with negative/positive reviews</p>
+
+                <p> Paragraph about sentiment analysis uses for example customer feedback, market research, brand monitoring</p>
+
+                <p>TBD </p>
+
+                <p>TBD</p>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+</html>
