@@ -14,7 +14,9 @@ Why?
 Today, consumers have come to expect easily accessible information through experiences of others like them via  ratings and reviews. Our latest research found that 85% of shoppers seek out negative reviews, up from 82% in 2014 (PowerReviews).  
 
 Try it for Yourself!
+Our machine learning model categorizes your review of a prescription into a positive or negative score, thus providing insights to the user. Be it an individual or a company, the model and interface can be adjusted according to the role of the end user. A substantially sized sample of 160,000 reviews is used to predict a trustworthy sentiment. 
 
+The other page on this site demonstrates visualizations that both the customer and pharmaceutical companies would utilize in decision-making. 
 
 
 ## Team Members: 
