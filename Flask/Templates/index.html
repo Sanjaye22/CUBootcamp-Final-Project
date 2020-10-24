@@ -18,7 +18,7 @@
 <!--Introduce navbar-->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
-    <a class="navbar-brand logo" href="index.html" style="color: black"> <i class="fas fa-prescription" style="font-size: 30px"></i> </a>
+    <a class="navbar-brand logo" href="/" style="color: black"> <i class="fas fa-prescription" style="font-size: 30px"></i> </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -42,19 +42,21 @@
 </nav>
 
 <body>
+    <br>
     <img src="static/images/pill3.png" id='img_2' class="img-fluid">
-
+    <br>
     <div class="container">
         <h1 id='test'> Sentiment Analysis of Drug Reviews </h1>
         <!-- This is the source of the gif: https://media.giphy.com/media/l4XyCo0bmD4yc1zrKv/giphy.gif -->
     </div>
+    <br>
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
                 <!-- <img src="picture.jpg" id = 'main_img'  class="img-fluid"> -->
                 <!-- // GIF used available here: https://dribbble.com/shots/3932264-Mars "Mars by James Curran" -->
                 <br>
-                <p class='placeholder1'> "What is sentiment analysis" </p>
+                <p class='placeholder1'> A text classification tool that tells whether the underlying sentiment is negative or positive </p>
                 <form method="POST" action="/">
                     <div class="form-group shadow-textarea">
                         <label for="exampleFormControlTextarea6" id="prediction">Predict your sentiments...</label>
@@ -62,22 +64,20 @@
                         <br>
                         <img src="static/images/stars.gif" id='gif' class="img-fluid">
                         <button class="btn btn-light btn-lg-active" type="submit" value="Submit" style="background-color:#FAF9C1">Submit Review</button>
-                    </div>
+                    </div> 
                 </form>
+                
                 {% if output %}
-                <h3>{{output}}</h3>
+                <p>{{output}}<p>
                 {% endif %}
+                
                 <br>
                 <br>
 
-
-                <p> A brief rundown of the model, what model was used to train the algorithm and why. Add two pictures with negative/positive reviews</p>
-
-                <p> Paragraph about sentiment analysis uses for example customer feedback, market research, brand monitoring</p>
-
-                <p>TBD </p>
-
-                <p>TBD</p>
+                <p> Above is a machine learning model that categorizes your review of a prescription into a positive or negative score, thus providing insights to the user. Be it an individual or a company, the model and interface can be adjusted according to the role of the end user.</p>
+                <br>   
+                <p> A substantially sized sample of 160,000 reviews is used to predict a trustworthy sentiment. 
+                    The other page on this site demonstrates visualizations that both the customer and pharmaceutical companies would utilize in decision-making.</p>
 
             </div>
         </div>
