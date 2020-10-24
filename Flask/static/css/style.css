@@ -127,3 +127,7 @@ p {
     /* background-color: rgb(173, 195, 230) !important; */
     background-color: #FAF9C1 !important;
 }
+
+a:hover {
+    background-color: white;
+}
